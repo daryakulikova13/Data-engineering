@@ -13,7 +13,7 @@ my_data_project/
 # Результат работы скрипта
 
 Скрипт загружает данные из Google Drive и выводит первую десятку строк:
-[Результат выполнения скрипта](<img width="1187" height="558" alt="image" src="https://github.com/user-attachments/assets/55595450-176b-4c27-83fa-1aefc11b2133" />)
+[Результат выполнения скрипта](screenshot.jpg)
 
 # Описание скрипта
 
