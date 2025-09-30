@@ -50,12 +50,11 @@ dtype: object
 ```
 
 ## Вывод скрипта:
-```
+
 Загружаем данные по ссылке:
 https://drive.google.com/uc?id=1dQ3FPIm5Iy-nac0sCEB84bCuATwP08We
-Типы данных ДО изменений:
 Загрузка данных...
-ДАННЫЕ УСПЕШНО ЗАГРУЖЕНЫ!```
+ДАННЫЕ УСПЕШНО ЗАГРУЖЕНЫ!
 
 - Размер данных: (1000, 8)
 - Колонки:`['ID', 'Name', 'Sequence', 'Molecular_Weight', 'Isoelectric_Point', 'Protein_Length', 'Amino_Acid_Composition', 'Hydrophobicity']`
@@ -74,6 +73,7 @@ https://drive.google.com/uc?id=1dQ3FPIm5Iy-nac0sCEB84bCuATwP08We
 | WP_369686360.1 | WYL domain-conta... | MQALLPCESPAALSIP... | 8771.2230 | 8.802336 | 81 | 0.319753 |
 | WP_369686359.1 | fimbrial protein... | IIPFTCQTPDVIVPMG... | 9075.0983 | 6.224745 | 85 | -0.192941 |
 
+```
 ✓ Molecular_Weight - теперь числа с точкой
 ✓ Isoelectric_Point - теперь числа с точкой
 ✓ Protein_Length - теперь целые числа
@@ -82,6 +82,7 @@ https://drive.google.com/uc?id=1dQ3FPIm5Iy-nac0sCEB84bCuATwP08We
 ✓ Name - теперь строковый тип (убрали лишние пробелы)
 ✓ Sequence - теперь строковый тип (убрали лишние пробелы)
 ✓ Amino_Acid_Composition - преобразован в словарь Python
+```
 
 Сохранили в CSV: белки_pseudomonas.csv
 (можно открыть в Excel)
