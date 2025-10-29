@@ -135,7 +135,8 @@ Hydrophobicity            float64
 dtype: object
 ```
 
-4. EDA-отчёт в виде Jypiter Notebook, где проведена базовая статистическая обработка данных, а также частота распределения признаков и корреляционный анализ (рендер на ноутбук - );
+4. EDA-отчёт в виде Jypiter Notebook, где проведена базовая статистическая обработка данных, а также частота распределения признаков и корреляционный анализ;
+Рендер на Jypiter Notebook - [![View on nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/daryakulikova13/Data-engineering/blob/main/notebooks/Seaborn_EDA.ipynb)
 
 
 
