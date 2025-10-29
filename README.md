@@ -122,20 +122,13 @@
   </tbody>
 </table>
 
-3. Выполнено приведение типов переменных;
-```
-ID                         object
-Name                       object
-Sequence                   object
-Molecular_Weight          float64
-Isoelectric_Point         float64
-Protein_Length              Int64
-Amino_Acid_Composition     object
-Hydrophobicity            float64
-dtype: object
-```
+3. Выполнено приведение типов переменных и создан файл "pseudomonas_aeruginosa.parquet";
+<img width="430" height="258" alt="image" src="https://github.com/user-attachments/assets/d90fa480-9446-4137-9fe5-2b6a73f9436e" />
 
-4. EDA-отчёт в виде Jypiter Notebook, где проведена базовая статистическая обработка данных, а также частота распределения признаков и корреляционный анализ;
+4. Переменные из pseudomonas_aeruginosa.parquet были загружены в базу данных homeworks (скрипт выполнения находится в файле 'data_loader.py');
+
+5. EDA-отчёт в виде Jypiter Notebook, где проведена базовая статистическая обработка данных, а также частота распределения признаков и корреляционный анализ.
+
 Рендер на Jypiter Notebook - [![View on nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/daryakulikova13/Data-engineering/blob/main/notebooks/Seaborn_EDA.ipynb)
 
 
