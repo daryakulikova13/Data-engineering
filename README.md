@@ -11,47 +11,10 @@
 
 # Структура проекта
 1. Датасет, содержащий 8 столбцов и 1000 строк (формат .csv);
-2. Скрипт, позволяющий выгружать датасет из Google Drive и выводить первые десять строк данных (`data_loader.py`) [Результат выполнения скрипта](screenshot.jpg);
-3. EDA-отчёт в виде Jypiter Notebook, где проведена базовая статистическая обработка данных, а также частота распределения признаков и корреляционный анализ;        
-
-
-# Результаты преобразования типов данных
-## Типы данных ДО обработки:
-```
-ID                         object
-Name                       object
-Sequence                   object
-Molecular_Weight          float64
-Isoelectric_Point         float64
-Protein_Length              int64
-Amino_Acid_Composition     object
-Hydrophobicity            float64
-dtype: object
-```
-
-## Типы данных ПОСЛЕ обработки:
-```
-ID                         object
-Name                       object
-Sequence                   object
-Molecular_Weight          float64
-Isoelectric_Point         float64
-Protein_Length              Int64
-Amino_Acid_Composition     object
-Hydrophobicity            float64
-dtype: object
-```
-
-## Вывод скрипта:
-
-Загружаем данные по ссылке:
-https://drive.google.com/uc?id=1dQ3FPIm5Iy-nac0sCEB84bCuATwP08We
-Загрузка данных...
-ДАННЫЕ УСПЕШНО ЗАГРУЖЕНЫ!
-
 - Размер данных: (1000, 8)
 - Колонки:`['ID', 'Name', 'Sequence', 'Molecular_Weight', 'Isoelectric_Point', 'Protein_Length', 'Amino_Acid_Composition', 'Hydrophobicity']`
 
+3. Скрипт, позволяющий выгружать датасет из Google Drive и выводить первые десять строк данных (`data_loader.py`) [Результат выполнения скрипта](screenshot.jpg);
 Первые 10 строк:
 | ID | Name | Sequence | Molecular_Weight | Isoelectric_Point | Protein_Length | Hydrophobicity |
 |----|------|----------|------------------|-------------------|----------------|----------------|
@@ -66,19 +29,20 @@ https://drive.google.com/uc?id=1dQ3FPIm5Iy-nac0sCEB84bCuATwP08We
 | WP_369686360.1 | WYL domain-conta... | MQALLPCESPAALSIP... | 8771.2230 | 8.802336 | 81 | 0.319753 |
 | WP_369686359.1 | fimbrial protein... | IIPFTCQTPDVIVPMG... | 9075.0983 | 6.224745 | 85 | -0.192941 |
 
+5. Выполнено приведение типов переменных;
 ```
-✓ Molecular_Weight - теперь числа с точкой
-✓ Isoelectric_Point - теперь числа с точкой
-✓ Protein_Length - теперь целые числа
-✓ Hydrophobicity - теперь числа с точкой
-✓ ID - теперь строковый тип (убрали лишние пробелы)
-✓ Name - теперь строковый тип (убрали лишние пробелы)
-✓ Sequence - теперь строковый тип (убрали лишние пробелы)
-✓ Amino_Acid_Composition - преобразован в словарь Python
+ID                         object
+Name                       object
+Sequence                   object
+Molecular_Weight          float64
+Isoelectric_Point         float64
+Protein_Length              Int64
+Amino_Acid_Composition     object
+Hydrophobicity            float64
+dtype: object
 ```
 
-Сохранили в CSV: белки_pseudomonas.csv
-(можно открыть в Excel)
+7. EDA-отчёт в виде Jypiter Notebook, где проведена базовая статистическая обработка данных, а также частота распределения признаков и корреляционный анализ;
 
-СКРИПТ ЗАВЕРШЁН
+
 
