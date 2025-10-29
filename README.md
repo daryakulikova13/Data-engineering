@@ -14,22 +14,115 @@
 - Размер данных: (1000, 8)
 - Колонки:`['ID', 'Name', 'Sequence', 'Molecular_Weight', 'Isoelectric_Point', 'Protein_Length', 'Amino_Acid_Composition', 'Hydrophobicity']`
 
-3. Скрипт, позволяющий выгружать датасет из Google Drive и выводить первые десять строк данных (`data_loader.py`) [Результат выполнения скрипта](screenshot.jpg);
+2. Скрипт, позволяющий выгружать датасет из Google Drive и выводить первые десять строк данных (`data_loader.py`) [Результат выполнения скрипта](screenshot.jpg);
 Первые 10 строк:
-| ID | Name | Sequence | Molecular_Weight | Isoelectric_Point | Protein_Length | Hydrophobicity |
-|----|------|----------|------------------|-------------------|----------------|----------------|
-| WP_369686368.1 | ATP-binding cass... | MLELNFTQTLGSHTLT... | 5756.5430 | 8.517644 | 56 | 0.339286 |
-| WP_369686367.1 | aldehyde dehydro... | MQSRDNGKPLAEARGL... | 6617.5065 | 6.106918 | 62 | -0.146774 |
-| WP_369686366.1 | hypothetical pro... | GGEYLEIIEAARDIRV... | 9303.2892 | 4.533444 | 81 | -0.406173 |
-| WP_369686365.1 | hypothetical pro... | NAVVNQKRVPLAPNGD... | 6304.0708 | 9.989715 | 58 | -0.591379 |
-| WP_369686364.1 | homocysteine S-m... | MAGYLPQWLDAGAKLI... | 3619.1997 | 7.810425 | 34 | 0.141176 |
-| WP_369686363.1 | hypothetical pro... | NRLILSPMGVRDVFRA... | 9303.6417 | 8.358213 | 83 | -0.059036 |
-| WP_369686362.1 | DUF1043 family p... | MTWEYALIGLVVGIII... | 5601.4576 | 6.140907 | 48 | -0.164583 |
-| WP_369686361.1 | hypothetical pro... | EIIKELVLRRKLFFKD... | 9935.1238 | 5.608610 | 83 | -0.630120 |
-| WP_369686360.1 | WYL domain-conta... | MQALLPCESPAALSIP... | 8771.2230 | 8.802336 | 81 | 0.319753 |
-| WP_369686359.1 | fimbrial protein... | IIPFTCQTPDVIVPMG... | 9075.0983 | 6.224745 | 85 | -0.192941 |
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Sequence</th>
+      <th>Molecular_Weight</th>
+      <th>Isoelectric_Point</th>
+      <th>Protein_Length</th>
+      <th>Hydrophobicity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WP_369686368.1</td>
+      <td>ATP-binding cass...</td>
+      <td>MLELNFTQTLGSHTLT...</td>
+      <td>5756.5430</td>
+      <td>8.517644</td>
+      <td>56</td>
+      <td>0.339286</td>
+    </tr>
+    <tr>
+      <td>WP_369686367.1</td>
+      <td>aldehyde dehydro...</td>
+      <td>MQSRDNGKPLAEARGL...</td>
+      <td>6617.5065</td>
+      <td>6.106918</td>
+      <td>62</td>
+      <td>-0.146774</td>
+    </tr>
+    <tr>
+      <td>WP_369686366.1</td>
+      <td>hypothetical pro...</td>
+      <td>GGEYLEIIEAARDIRV...</td>
+      <td>9303.2892</td>
+      <td>4.533444</td>
+      <td>81</td>
+      <td>-0.406173</td>
+    </tr>
+    <tr>
+      <td>WP_369686365.1</td>
+      <td>hypothetical pro...</td>
+      <td>NAVVNQKRVPLAPNGD...</td>
+      <td>6304.0708</td>
+      <td>9.989715</td>
+      <td>58</td>
+      <td>-0.591379</td>
+    </tr>
+    <tr>
+      <td>WP_369686364.1</td>
+      <td>homocysteine S-m...</td>
+      <td>MAGYLPQWLDAGAKLI...</td>
+      <td>3619.1997</td>
+      <td>7.810425</td>
+      <td>34</td>
+      <td>0.141176</td>
+    </tr>
+    <tr>
+      <td>WP_369686363.1</td>
+      <td>hypothetical pro...</td>
+      <td>NRLILSPMGVRDVFRA...</td>
+      <td>9303.6417</td>
+      <td>8.358213</td>
+      <td>83</td>
+      <td>-0.059036</td>
+    </tr>
+    <tr>
+      <td>WP_369686362.1</td>
+      <td>DUF1043 family p...</td>
+      <td>MTWEYALIGLVVGIII...</td>
+      <td>5601.4576</td>
+      <td>6.140907</td>
+      <td>48</td>
+      <td>-0.164583</td>
+    </tr>
+    <tr>
+      <td>WP_369686361.1</td>
+      <td>hypothetical pro...</td>
+      <td>EIIKELVLRRKLFFKD...</td>
+      <td>9935.1238</td>
+      <td>5.608610</td>
+      <td>83</td>
+      <td>-0.630120</td>
+    </tr>
+    <tr>
+      <td>WP_369686360.1</td>
+      <td>WYL domain-conta...</td>
+      <td>MQALLPCESPAALSIP...</td>
+      <td>8771.2230</td>
+      <td>8.802336</td>
+      <td>81</td>
+      <td>0.319753</td>
+    </tr>
+    <tr>
+      <td>WP_369686359.1</td>
+      <td>fimbrial protein...</td>
+      <td>IIPFTCQTPDVIVPMG...</td>
+      <td>9075.0983</td>
+      <td>6.224745</td>
+      <td>85</td>
+      <td>-0.192941</td>
+    </tr>
+  </tbody>
+</table>
 
-5. Выполнено приведение типов переменных;
+3. Выполнено приведение типов переменных;
 ```
 ID                         object
 Name                       object
@@ -42,7 +135,7 @@ Hydrophobicity            float64
 dtype: object
 ```
 
-7. EDA-отчёт в виде Jypiter Notebook, где проведена базовая статистическая обработка данных, а также частота распределения признаков и корреляционный анализ;
+4. EDA-отчёт в виде Jypiter Notebook, где проведена базовая статистическая обработка данных, а также частота распределения признаков и корреляционный анализ (рендер на ноутбук - );
 
 
 
