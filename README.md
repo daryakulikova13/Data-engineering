@@ -124,10 +124,10 @@
   </tbody>
 </table>
 
-3. Выполнено приведение типов переменных и создан файл "pseudomonas_aeruginosa.parquet";
+3. Выполнено приведение типов переменных и создан файл `pseudomonas_aeruginosa.parquet`;
 <img width="430" height="258" alt="image" src="https://github.com/user-attachments/assets/d90fa480-9446-4137-9fe5-2b6a73f9436e" />
 
-4. Переменные из `pseudomonas_aeruginosa.parquet` были загружены в базу данных homeworks (скрипт выполнения находится в файле `data_loader.py`);
+4. Переменные из `pseudomonas_aeruginosa.parquet` были загружены в базу данных homeworks (скрипт выполнения находится в файле `write_to_db.py`);
 
 5. EDA-отчёт в виде Jypiter Notebook, где проведена базовая статистическая обработка данных, а также частота распределения признаков и корреляционный анализ.
 
