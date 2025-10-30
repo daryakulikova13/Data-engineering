@@ -133,5 +133,7 @@
 
 Рендер на Jypiter Notebook - [![View on nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/daryakulikova13/Data-engineering/blob/main/notebooks/Seaborn_EDA.ipynb)
 
+6. Создан  ETL-процесс:
+
 
 
