@@ -11,7 +11,7 @@ import sys
 import os
 
 current_dir = os.path.dirname(__file__)
-parent_dir = os.path.dirname('/home/dasha/my_data_project/etl/')
+parent_dir = os.path.dirname('/etl/')
 sys.path.append(parent_dir)
 
 from extract import extract_from_google_drive, validate_raw_data, save_raw_data
