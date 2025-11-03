@@ -49,8 +49,8 @@ def load_to_database(df: pd.DataFrame, table_name: str = "kulikova", max_rows: i
         raise
 
 def load_to_parquet(df: pd.DataFrame, filename: str = "processed_proteins.parquet"):
-    os.makedirs('/home/dasha/Desktop/Data-engineering_project/processed/', exist_ok=True)
-    file_path = f'/home/dasha/Desktop/Data-engineering_project/processed/{filename}'
+    os.makedirs('/processed/', exist_ok=True)
+    file_path = f'/processed/{filename}'
     df.to_parquet(file_path, index=False)
     print(f"Данные сохранены в Parquet: {file_path}")
 
