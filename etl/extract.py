@@ -41,8 +41,8 @@ def validate_raw_data(df: pd.DataFrame) -> bool:
     return True
 
 def save_raw_data(df: pd.DataFrame, filename: str = "raw_proteins.csv"):
-    os.makedirs('/home/dasha/Desktop/Data-engineering_project/raw/', exist_ok=True)
-    file_path = f'/home/dasha/Desktop/Data-engineering_project/raw/{filename}'
+    os.makedirs('/raw/', exist_ok=True)
+    file_path = f'/raw/{filename}'
     df.to_csv(file_path, index=False)
     print(f"Сырые данные сохранены в {file_path}")
     
