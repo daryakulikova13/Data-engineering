@@ -83,7 +83,7 @@ def split_protein_name(df: pd.DataFrame) -> pd.DataFrame:
 
 def test_with_real_data():
     try:
-        raw_file_path = "/home/dasha/Desktop/Data-engineering_project/raw/raw_proteins.csv"
+        raw_file_path = "/raw/raw_proteins.csv"
         
         if os.path.exists(raw_file_path):
             print("\n1. Загрузка сырых данных из CSV")
